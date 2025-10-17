@@ -1,0 +1,255 @@
+/* ✅ CONTACT INFO SA HEADER */
+.contact-info {
+    color: #ccc;
+    font-size: 14px;
+    margin-left: 20px;
+}
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* HERO SECTION (HOME PAGE COVER) */
+.hero {
+    position: relative;
+    background: url('salvano.jpg');
+    background-size: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 230px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ✅ Product name */
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 6px 0;
+    color: #222;
+}
+
+/* ✅ Price style */
+.product .price {
+    color: #ff6600; /* kulay ng price */
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+
+/* ✅ CONTACT SECTION STYLE */
+#contact {
+    background-color: #222;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* ✅ ABOUT US SECTION */
+#about {
+    padding: 100px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#about h2 span {
+    color: #ff6600;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-image img {
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-text .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
